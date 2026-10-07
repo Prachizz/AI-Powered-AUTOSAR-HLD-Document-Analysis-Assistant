@@ -1,0 +1,15 @@
+# Core app
+streamlit>=1.32
+pymupdf>=1.23          # PDF text extraction (import fitz)
+faiss-cpu>=1.7.4       # vector store
+sentence-transformers>=2.6   # embeddings (pulls torch; CPU build is enough)
+numpy>=1.24
+pandas>=2.0
+
+# LLM clients
+openai>=1.30           # used for Gemini, Groq (OpenAI-compatible endpoints) and OpenAI
+requests>=2.31         # used for local Ollama
+python-dotenv>=1.0     # loads API keys from Code/.env
+
+# Only needed to regenerate the synthetic HLD PDF
+reportlab>=4.0
